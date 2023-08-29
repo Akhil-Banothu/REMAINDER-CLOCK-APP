@@ -102,18 +102,40 @@ select {
    font-size: 40px;
    border-radius: 15px;
    font-family: 'Lilita One', cursive;
+   text-transform: uppercase;
 }
 
 .part-4 {
    grid-column: 1/2;
    grid-row: 4/5;
-   font-size: 27px;
-   font-weight: 600;
-   color: #FFFFFF;
    display: grid;
    place-items: center;
+   
+}
+
+button {
+   width: 365px;
+   height: 50px;
+   background: none;
+   border: none;
+   font-size: 25px;
+   color: #FFFFFF;
+   font-weight: 600;
+   background-color: green;
    background-image: linear-gradient(113deg, #6E54EC 5%, #CB52F8, #FC5EFF 100%, #F1A7C5);
    border-radius: 5px;
+}
+
+button::after {
+   content: 'Set Alarm';
+}
+
+button:hover::after {
+   content: 'Party time!';
+}
+
+button:hover {
+   background-image: linear-gradient(113deg, #F1A7C5, #FC5EFF 50%, #CB52F8, #6E54EC 100%);
 }
 
 .part-5 {
@@ -130,6 +152,10 @@ select {
 
 .timing {
    width: 90%;
+}
+
+.common {
+   display: inline;
 }
 
 .sub-section2 {
@@ -182,7 +208,7 @@ select {
    gap: 10px;
 }
 
-.hour, .min, .sec {
+#hour, #min, #sec {
    background-image: url(./timeline.svg);
    text-align: center;
    padding: 20px;
@@ -245,14 +271,26 @@ select {
    color: #8E53F0;
    background-color: #FFFFFF;
    border-radius: 15px;
-   font-size: 30px;
-   font-weight: bold;
+}
+
+#greeting4 {
+   font-size: 32px;
+   text-transform: uppercase;
+   text-align: center;
 }
 
 .section3 {
    grid-column: 1/2;
    grid-row: 3/4;
+}
 
+#image {
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 750px;
+   height: 470px;
+   border-radius: 15px;
+   margin-left: 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -280,7 +318,7 @@ select {
       width: 95%;
    }
    .first {
-      font-size: 15px;
+      font-size: 25px;
       gap: 30px;
    }
    .first img {
@@ -288,7 +326,9 @@ select {
       height: 30px;
    }
    select {
-      width: 180px;
+      width: 220px;
+      font-size: 23px;
+      text-align: center;
    }
    .part-3 {
       font-size: 30px;
@@ -297,7 +337,7 @@ select {
       font-size: 22px;
    }
    .part-5 {
-      font-size: 13px;
+      font-size: 23px;
       line-height: 30px;
    }
    .section2 {
@@ -340,10 +380,14 @@ select {
    
    .three {
       font-size: 25px;
-      height: 60px;
-      padding: 10px;
+      height: 100px;
+      padding: 20px;
    }
    .content1 span {
       font-size: 30px;
+   }
+
+   button {
+      width: 330px;
    }
 }
