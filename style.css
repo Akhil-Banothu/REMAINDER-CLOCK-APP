@@ -286,14 +286,14 @@ button:hover {
 
 #image {
    background-repeat: no-repeat;
-   background-size: contain;
+   background-size: cover;
    width: 750px;
    height: 470px;
    border-radius: 15px;
    margin-left: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
    .main-section {
       width: 95%;
       height: 100vh;
@@ -318,7 +318,7 @@ button:hover {
       width: 95%;
    }
    .first {
-      font-size: 25px;
+      font-size: 15px;
       gap: 30px;
    }
    .first img {
@@ -326,9 +326,12 @@ button:hover {
       height: 30px;
    }
    select {
-      width: 220px;
-      font-size: 23px;
+      width: 170px;
+      font-size: 16px;
       text-align: center;
+   }
+   .part-2 {
+      width: 100%;
    }
    .part-3 {
       font-size: 30px;
@@ -337,7 +340,7 @@ button:hover {
       font-size: 22px;
    }
    .part-5 {
-      font-size: 23px;
+      font-size: 13px;
       line-height: 30px;
    }
    .section2 {
@@ -362,12 +365,12 @@ button:hover {
       font-size: 15px;
    }
    
-   .hour,
-   .min,
-   .sec {
+   #hour,
+   #min,
+   #sec {
       background-image: url(./timeline.svg);
       padding: 10px;
-      height: 60px;
+      height: 70px;
    }
    
    .big {
@@ -380,14 +383,68 @@ button:hover {
    
    .three {
       font-size: 25px;
-      height: 100px;
-      padding: 20px;
+      height: 70px;
+      padding: 10px;
+      margin-left: 10px;
    }
    .content1 span {
       font-size: 30px;
    }
 
    button {
-      width: 330px;
+      width: 100%;
+      font-size: 20px;
+   }
+
+   #image {
+      width: 100%;
+      height: 340px;
+      margin-left: 0px;
+   }
+}
+
+@media (min-width: 750px) and (max-width: 1200px) {
+   .main-section {
+      width: 95%;
+      height: 100vh;
+      grid-template-columns: 100%;
+   }
+
+   .sub-section1 {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      display: grid;
+      grid-template-columns: 47.5% 50%;
+      grid-template-rows: 100px 380px 100px 60px 70px;
+      gap: 20px;
+      column-gap: 30px;
+   }
+
+   .sub-section2 {
+      grid-column: 1/1;
+      grid-row: 2/3;
+   }
+
+   .first {
+      font-size: 24px;
+   }
+
+   select {
+      width: 350px;
+      font-size: 20px;
+   }
+
+   .part-5 {
+      font-size: 20px;
+   }
+
+   button {
+      width: 100%;
+      font-size: 28px;
+   }
+
+   #image {
+      width: 100%;
+      margin-left: 0px;
    }
 }
